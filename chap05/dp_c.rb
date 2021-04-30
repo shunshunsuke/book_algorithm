@@ -4,7 +4,7 @@ N.times do
   a.push(gets.split.map(&:to_i))
 end
 
-dp = Array.new(N + 1, 0) { Array.new(3, 0) }
+dp = Array.new(N + 1) { Array.new(3, 0) }
 3.times do |i|
   dp[0][i] = 0
 end
